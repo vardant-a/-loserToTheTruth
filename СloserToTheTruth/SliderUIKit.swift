@@ -14,8 +14,8 @@ struct SliderUIKit: UIViewRepresentable {
     
     func makeUIView(context: Context) -> UISlider {
         let slider = UISlider()
-        slider.minimumValue = Float(0)
-        slider.maximumValue = Float(100)
+        slider.minimumValue = 0.0
+        slider.maximumValue = 100.0
         slider.thumbTintColor = .systemRed.withAlphaComponent(CGFloat(opacity)/100)
         
         slider.addTarget(
@@ -27,13 +27,13 @@ struct SliderUIKit: UIViewRepresentable {
         return slider
     }
     
+    func makeCoordinator() -> Coordinator {
+        Coordinator(value: $value)
+    }
+    
     func updateUIView(_ uiView: UISlider, context: Context) {
         uiView.value = Float(value)
         uiView.thumbTintColor = .systemRed.withAlphaComponent(CGFloat(opacity)/100)
-    }
-    
-    func makeCoordinator() -> Coordinator {
-        Coordinator(value: $value)
     }
 }
 
@@ -45,7 +45,6 @@ extension SliderUIKit {
         init(value: Binding<Double>) {
             self._value = value
         }
-        
         
         @objc func valueChange(_ sender: UISlider) {
             value = Double(sender.value)
