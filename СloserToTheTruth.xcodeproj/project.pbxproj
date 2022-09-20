@@ -7,18 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0E5958C028DA27C1000AA9FD /* _loserToTheTruthApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5958BF28DA27C1000AA9FD /* _loserToTheTruthApp.swift */; };
+		0E5958C028DA27C1000AA9FD /* CloserToTheTruthApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5958BF28DA27C1000AA9FD /* CloserToTheTruthApp.swift */; };
 		0E5958C228DA27C1000AA9FD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5958C128DA27C1000AA9FD /* ContentView.swift */; };
 		0E5958C428DA27C2000AA9FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E5958C328DA27C2000AA9FD /* Assets.xcassets */; };
 		0E5958C728DA27C2000AA9FD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E5958C628DA27C2000AA9FD /* Preview Assets.xcassets */; };
+		0EF9736428DA3A8F00EC5690 /* SliderUIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF9736328DA3A8F00EC5690 /* SliderUIKit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0E5958BC28DA27C1000AA9FD /* СloserToTheTruth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "СloserToTheTruth.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0E5958BF28DA27C1000AA9FD /* _loserToTheTruthApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _loserToTheTruthApp.swift; sourceTree = "<group>"; };
+		0E5958BF28DA27C1000AA9FD /* CloserToTheTruthApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloserToTheTruthApp.swift; sourceTree = "<group>"; };
 		0E5958C128DA27C1000AA9FD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0E5958C328DA27C2000AA9FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E5958C628DA27C2000AA9FD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0EF9736328DA3A8F00EC5690 /* SliderUIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderUIKit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +53,9 @@
 		0E5958BE28DA27C1000AA9FD /* СloserToTheTruth */ = {
 			isa = PBXGroup;
 			children = (
-				0E5958BF28DA27C1000AA9FD /* _loserToTheTruthApp.swift */,
+				0E5958BF28DA27C1000AA9FD /* CloserToTheTruthApp.swift */,
 				0E5958C128DA27C1000AA9FD /* ContentView.swift */,
+				0EF9736328DA3A8F00EC5690 /* SliderUIKit.swift */,
 				0E5958C328DA27C2000AA9FD /* Assets.xcassets */,
 				0E5958C528DA27C2000AA9FD /* Preview Content */,
 			);
@@ -138,7 +141,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E5958C228DA27C1000AA9FD /* ContentView.swift in Sources */,
-				0E5958C028DA27C1000AA9FD /* _loserToTheTruthApp.swift in Sources */,
+				0EF9736428DA3A8F00EC5690 /* SliderUIKit.swift in Sources */,
+				0E5958C028DA27C1000AA9FD /* CloserToTheTruthApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,9 +286,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Vardant-Coding.-loserToTheTruth";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -311,9 +318,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Vardant-Coding.-loserToTheTruth";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
